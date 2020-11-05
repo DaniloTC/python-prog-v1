@@ -1,3 +1,5 @@
+import adivinhacao
+
 # Apresentando opções para o usuário
 print("***************************")
 print("***  Escolha uma opção  ***")
@@ -13,7 +15,7 @@ escolha = int(input("O que deseja fazer? "))
 # Processando a escolha do usuário e executando o programa
 # que foi escolhido a partir do menu.
 if (escolha == 1):
-    print("Jogar jogo de adivinhação")
+    adivinhacao.jogar_adivinhacao()
 elif (escolha == 2):
     print("Fazer cálculo matemático")
 else:
