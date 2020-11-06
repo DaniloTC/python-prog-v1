@@ -1,5 +1,6 @@
 import adivinhacao
 import imc
+import matematica
 
 # Apresentando opções para o usuário
 print("***************************")
@@ -18,7 +19,7 @@ escolha = int(input("O que deseja fazer? "))
 if (escolha == 1):
     adivinhacao.jogar_adivinhacao()
 elif (escolha == 2):
-    print("Fazer cálculo matemático")
+    matematica.operacoes()
 elif (escolha == 3):
     imc.calcular_imc()
 else:
