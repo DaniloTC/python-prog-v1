@@ -3,7 +3,8 @@ import func_matematica as f
 # Definindo função contendo operações básicas de matemáticas
 def operacoes():
     # Apresentando menu de opções
-    print("Escolha uma operação do MENU")
+    print("***************************************************")
+    print("***         ESCOLHA UMA OPÇÃO DO MENU           ***")
     print("***************************************************")
     print("(1) Soma (2) Subração (3) Multiplicação (4) Divisão")
     print("***************************************************")
