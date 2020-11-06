@@ -1,4 +1,5 @@
 import adivinhacao
+import imc
 
 # Apresentando opções para o usuário
 print("***************************")
@@ -18,6 +19,8 @@ if (escolha == 1):
     adivinhacao.jogar_adivinhacao()
 elif (escolha == 2):
     print("Fazer cálculo matemático")
+elif (escolha == 3):
+    imc.calcular_imc()
 else:
     print("Calcular imc")
 
