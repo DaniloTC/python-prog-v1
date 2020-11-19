@@ -1,6 +1,6 @@
 def calcular_imc():
     print("***************************************")
-    print("***         Cálculando IMC          ***")
+    print("***         Calculando IMC          ***")
     print("***************************************")
 
     # Armazenando altura e peso do usuário já convertida para float
