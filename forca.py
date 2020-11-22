@@ -16,8 +16,7 @@ def jogar_forca():
         for letra in palavra_secreta:
             if (chute == letra):
                 print("Encontrei a letra {} na posição {}".format(letra, index))
-            else:
-                index += 1
+            index += 1
 
 if (__name__ == "__main__"):
     jogar_forca()
