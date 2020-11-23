@@ -8,6 +8,7 @@ def jogar_forca():
 
     enforcou = False
     acertou = False
+    erros = 0
 
     print(letras_acertadas) # mostra quantidade de letras na palavra
 
@@ -16,16 +17,28 @@ def jogar_forca():
         chute = input("Escolha uma letra? ").strip().upper() # limpa espaços e transforma em maiúscula
         index = 0
 
-        for letra in palavra_secreta:
-            if (chute == letra):
-                letras_acertadas[index] = letra
-            index += 1
+        if(chute in palavra_secreta):
+            for letra in palavra_secreta:
+                if (chute == letra):
+                    letras_acertadas[index] = letra
+                index += 1
+        else:
+            erros +=1
+            print("Ops, você errou! Faltam {} tentativas.".format(6-erros))
         
         print(letras_acertadas) # coloca letra acertada na posição certa dentro da palavra
 
         # lógica para sair do while.
-        # redefinir variável 'enforcou' caso não exista o caractere ( _ ) na lista.
         acertou = "_" not in letras_acertadas
+        enforcou = erros == 6
+
+        # mesnagens se ganhar ou perder e sai do laço em ambos os casos.
+        if(acertou):
+            print("Parabéns, você ganhou!")
+            break
+        elif(enforcou):
+            print("Puxa! Você perdeu! A palavra era {}".format(palavra_secreta))
+            break
 
     print("Fim de jogo!")
 
